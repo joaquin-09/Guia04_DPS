@@ -1,4 +1,4 @@
-const books = [
+export const books = [
   {
     id: 1,
     title: 'Cien años de soledad',
@@ -80,5 +80,3 @@ const books = [
     summary: 'Gabriel García Márquez reconstruye, a modo de crónica periodística, el asesinato anunciado de Santiago Nasar en un pueblo del Caribe colombiano.'
   }
 ];
-
-module.exports = books;
