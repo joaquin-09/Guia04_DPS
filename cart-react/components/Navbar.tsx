@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import { clearCart } from "../redux/cartSlice";
+import { clearCart, removeFromCart } from "../redux/cartSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
 import "../styles/navbar.css";
@@ -43,6 +43,13 @@ export default function Navbar() {
                       <p>Cantidad: {item.quantity}</p>
                       <strong>${item.price * item.quantity}</strong>
                     </div>
+                    <button
+                      className="remove-button"
+                      onClick={() => dispatch(removeFromCart(item.id))}
+                      aria-label={`Eliminar ${item.title} del carrito`}
+                    >
+                      ✕
+                    </button>
                   </div>
                 ))}
                 <div className="cart-total"><strong>Total: ${total}</strong></div>
