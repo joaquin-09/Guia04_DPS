@@ -1,6 +1,4 @@
-import { Product } from "../types/Product";
-
-export const books: Product[] = [
+const books = [
   {
     id: 1,
     title: 'Cien años de soledad',
@@ -40,5 +38,47 @@ export const books: Product[] = [
     image: 'https://contentv2.tap-commerce.com/cover/large/9789878000473_1.jpg?id_com=1113',
     quantity: 1,
     summary: 'La colección completa de J.K. Rowling sobre el joven mago Harry Potter, su paso por Hogwarts y su enfrentamiento contra Lord Voldemort.'
+  },
+  {
+    id: 6,
+    title: 'Don Quijote de la Mancha',
+    price: 120,
+    image: 'https://placehold.co/300x450?text=Don+Quijote+de+la+Mancha',
+    quantity: 1,
+    summary: 'La obra maestra de Miguel de Cervantes sobre un hidalgo que, enloquecido por las novelas de caballería, sale a vivir sus propias aventuras.'
+  },
+  {
+    id: 7,
+    title: '1984',
+    price: 85,
+    image: 'https://placehold.co/300x450?text=1984',
+    quantity: 1,
+    summary: 'La distopía de George Orwell sobre un régimen totalitario que vigila y controla cada aspecto del pensamiento de sus ciudadanos.'
+  },
+  {
+    id: 8,
+    title: 'El Principito',
+    price: 45,
+    image: 'https://placehold.co/300x450?text=El+Principito',
+    quantity: 1,
+    summary: 'Antoine de Saint-Exupéry narra el encuentro de un aviador con un pequeño príncipe venido de otro planeta, una fábula sobre el amor y la amistad.'
+  },
+  {
+    id: 9,
+    title: 'Rayuela',
+    price: 110,
+    image: 'https://placehold.co/300x450?text=Rayuela',
+    quantity: 1,
+    summary: 'Julio Cortázar propone una novela que puede leerse en varios órdenes, siguiendo el vagabundeo existencial de Horacio Oliveira entre París y Buenos Aires.'
+  },
+  {
+    id: 10,
+    title: 'Crónica de una muerte anunciada',
+    price: 70,
+    image: 'https://placehold.co/300x450?text=Cronica+de+una+muerte+anunciada',
+    quantity: 1,
+    summary: 'Gabriel García Márquez reconstruye, a modo de crónica periodística, el asesinato anunciado de Santiago Nasar en un pueblo del Caribe colombiano.'
   }
 ];
+
+module.exports = books;
